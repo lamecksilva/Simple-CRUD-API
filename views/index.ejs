@@ -13,13 +13,13 @@
             <%= customer.nome %>
           </a>
           <a href="/delete/<%= customer._id %>" 
-            onclick="return confirm('Tem certeza que deseja excluir?');">
-            (X)
+            onclick="return confirm('Are you sure about that?');">
+            (DELETE)
           </a>
         </li>
       <% }) %>
-    </ul>
-    <hr />
-    <a href="/new">Cadastrar novo cliente</a>
+      </ul>
+
+    <a id="InsNew" href="/new">Add new Client</a>
   </body>
 </html>

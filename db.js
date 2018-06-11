@@ -1,8 +1,8 @@
 var mongoClient = require("mongodb").MongoClient;
 var ObjectId = require("mongodb").ObjectId;
 
-mongoClient.connect("mongodb://localhost/crud_node")
-    .then(conn => global.conn = conn.db("crud_node"))
+mongoClient.connect("mongodb://localhost/CRUD")
+    .then(conn => global.conn = conn.db("CRUD"))
     .catch(err => console.log(err))
 
 

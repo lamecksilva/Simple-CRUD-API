@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
-
+global.db = require('../db');
 var app = require('../app');
 var debug = require('debug')('crud:server');
 var http = require('http');
