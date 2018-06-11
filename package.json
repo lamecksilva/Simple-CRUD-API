@@ -11,6 +11,22 @@
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
+    "mongodb": "^3.0.10",
     "morgan": "~1.9.0"
+  },
+  "description": "CRUD with Node Js, Express and MongoDB",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lamecksilva/CRUD.git"
+  },
+  "author": "Lameck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lamecksilva/CRUD/issues"
+  },
+  "homepage": "https://github.com/lamecksilva/CRUD#readme",
+  "devDependencies": {
+    "mongo": "^0.1.0"
   }
 }
