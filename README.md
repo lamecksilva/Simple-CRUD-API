@@ -13,14 +13,12 @@ CRUD with Node Js, Express and MongoDB
 
 #### Open one terminal and run:
 
-`$ mongod --dbpath {PATH_FOR_CRUD_FOLDER}/CRUD/data`
-## (PLEASE KEEP RUNNING)
+`$ mongod --dbpath {PATH_FOR_CRUD_FOLDER}/CRUD/data` (PLEASE KEEP RUNNING)
 
 #### Open other terminal and run:
 
 `$ mongo`
-`$ use CRUD`
-## (KEEP RUNNING)
+`$ use CRUD`  (KEEP RUNNING)
 
 #### Open other terminal and run:
 
