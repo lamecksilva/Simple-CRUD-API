@@ -1,29 +1,42 @@
 ## CRUD
-CRUD with Node Js, Express and MongoDB
+### What is?
 
-#### For install this repo, Click on clone and copy that link .git and run:
+This is a simple repository with a CRUD using Node.Js, Express JS and Mongo DB
 
-`git clone https://github.com/lamecksilva/CRUD.git`
 
-#### After install, enter to the folder and run: 
 
-`[user@user CRUD]$ npm install`
+## Install
 
-#### Install the current version from mongodb
+This repo use npm to install some dependencies, have node installed in your machine.
 
-#### Open one terminal and run:
+Clone the repository:
 
-`$ mongod --dbpath {PATH_FOR_CRUD_FOLDER}/CRUD/data` (PLEASE KEEP RUNNING)
+`$ git clone https://github.com/lamecksilva/CRUD.git`
 
-#### Open other terminal and run:
+Enter to the repository:
+
+`$ cd CRUD/`
+
+Install the dependencies:
+`$ npm install`
+
+Install the current version from [MongoDB](https://www.mongodb.com/)
+
+Open other terminal and run:
+
+`$ mongod --dbpath /CRUD/data` 
+Keep this terminal running
+
+Open other terminal and run:
 
 `$ mongo`
-`$ use CRUD`  (KEEP RUNNING)
+`$ use CRUD`
+Keep this terminal running
 
-#### Open other terminal and run:
+Open other terminal and run:
 
 `[user@user CRUD]$ npm start`
 
-#### Open your browser and go to: localhost:3000/
+Open your browser and go to: localhost:3000/
 
 #### Have Fun :)
