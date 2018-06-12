@@ -31,6 +31,7 @@ Keep this terminal running
 Open other terminal and run:
 
 `$ mongo`
+
 `$ use CRUD`
 Keep this terminal running
 
