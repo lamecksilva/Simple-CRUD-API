@@ -26,14 +26,14 @@ Install the current version from [MongoDB](https://www.mongodb.com/)
 Open other terminal and run:
 
 `$ mongod --dbpath /CRUD/data` 
-Keep this terminal running
+ Keep this terminal running
 
 Open other terminal and run:
 
 `$ mongo`
 
 `$ use CRUD`
-Keep this terminal running
+ Keep this terminal running
 
 Open other terminal and run:
 
