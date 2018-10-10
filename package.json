@@ -1,32 +1,27 @@
 {
-  "name": "crud",
-  "version": "0.0.0",
-  "private": true,
+  "name": "simple_crud_api",
+  "version": "1.0.0",
+  "description": "a simple crud api with node and express",
+  "main": "server.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "server": "nodemon server.js",
+    "start": "node server.js"
   },
-  "dependencies": {
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "ejs": "~2.5.7",
-    "express": "~4.16.0",
-    "http-errors": "~1.6.2",
-    "mongodb": "^3.0.10",
-    "morgan": "~1.9.0"
-  },
-  "description": "CRUD with Node Js, Express and MongoDB",
-  "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lamecksilva/CRUD.git"
+    "url": "git+https://github.com/lamecksilva/Simple_CRUD_API.git"
   },
-  "author": "Lameck",
+  "keywords": [
+    "crud",
+    "api",
+    "postman",
+    "node.js",
+    "express.js"
+  ],
+  "author": "lameck",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lamecksilva/CRUD/issues"
+    "url": "https://github.com/lamecksilva/Simple_CRUD_API/issues"
   },
-  "homepage": "https://github.com/lamecksilva/CRUD#readme",
-  "devDependencies": {
-    "mongo": "^0.1.0"
-  }
+  "homepage": "https://github.com/lamecksilva/Simple_CRUD_API#readme"
 }
