@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/lamecksilva/Simple_CRUD_API/issues"
   },
-  "homepage": "https://github.com/lamecksilva/Simple_CRUD_API#readme"
+  "homepage": "https://github.com/lamecksilva/Simple_CRUD_API#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.3.2"
+  }
 }
