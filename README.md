@@ -20,4 +20,4 @@ $ docker-compose up
 
 ---
 
-## Thanks =D
+## Thanks :grin:

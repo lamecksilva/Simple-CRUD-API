@@ -42,6 +42,25 @@ router.post('/new', (req, res) => {
     .catch(error => res.status(500).json(error));
 });
 
+// @Route   PUT api/person/update/:id
+// @desc    Update a person
+// @access  Public
+router.put('/update/:id', (req, res) => {
+  const { name, age } = req.body;
+
+  Person.findOneAndUpdate(
+    { _id: { $eq: req.params.id } }, // Find one id equals to id in params
+    { name, age }, // data to be updated
+    { new: true } // to mongoose returns the updated document
+  )
+    .then(newPerson => {
+      return res.json(newPerson);
+    })
+    .catch(error => {
+      return res.status(500).json(error);
+    });
+});
+
 // @Route   DELETE api/person/:id
 // @desc    Delete a person
 // @access  Public
