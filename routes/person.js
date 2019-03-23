@@ -42,5 +42,25 @@ router.post('/new', (req, res) => {
     .catch(error => res.status(500).json(error));
 });
 
+// @Route   DELETE api/person/:id
+// @desc    Delete a person
+// @access  Public
+router.delete('/:id', (req, res) => {
+  // Searching for a person and deleting
+  Person.findOneAndDelete({ _id: req.params.id })
+    .then(person => {
+      // If the id of person not exists, returns a error
+      if (!person) {
+        res.status(404).json({ msg: 'There is no user for this ID' });
+      }
+
+      return res.json(person);
+    })
+    .catch(error => {
+      // Handling the error
+      return res.status(500).json(error);
+    });
+});
+
 // Export the routes of person
 module.exports = router;
