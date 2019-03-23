@@ -1,12 +1,45 @@
 const express = require('express');
 const router = express.Router();
 
+const Person = require('../models/Person');
+
 // @Route   GET api/person/
 // @desc    Get all persons
 // @access  Public
 router.get('/', (req, res) => {
   // Sending html in response with message
-  res.send('Hello from persons');
+  // res.send('Hello from persons');
+
+  // Query all documents in db
+  Person.find()
+    .then(persons => {
+      // Returning documents to client
+      return res.json(persons);
+    })
+    .catch(error => {
+      // Error handling
+      return res.status(500).json(error);
+    });
+});
+
+// @Route   POST api/person/new
+// @desc    Creating a new person
+// @access  Public
+router.post('/new', (req, res) => {
+  // Get name and age from body request
+  const { name, age } = req.body;
+
+  // Creating a new Person (Model)
+  const newPerson = new Person({
+    name,
+    age
+  });
+
+  // Saving the new Person in the db
+  newPerson
+    .save()
+    .then(person => res.json(person))
+    .catch(error => res.status(500).json(error));
 });
 
 // Export the routes of person
