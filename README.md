@@ -7,20 +7,17 @@ Simple CRUD API server that connects to a database (mongoDB) and has operations 
 - Update
 - Delete
 
-
 ### Instalation
 
 Clone this repo and install the dependencies
+
 ```sh
 $ git clone https://github.com/lamecksilva/Simple_CRUD_API.git
 $ cd Simple_CRUD_API/
-$ npm install
-$ npm start
+$ npm i
+$ docker-compose up
 ```
 
-To run the server in development mode, run:
-``$ npm run server``
-
-
 ---
+
 ## Thanks =D

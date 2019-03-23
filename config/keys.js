@@ -1,4 +1,3 @@
 module.exports = {
-  mongoURI: "{YOUR MLAB URI HERE}",
-  secretOrKey: "secret"
+  mongoURI: 'mongodb://db:27017/crud-api'
 };
